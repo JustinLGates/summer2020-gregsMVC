@@ -29,25 +29,23 @@
     </header>
     <main class="container-fluid bg-secondary">
       <div class="row">
-        <!-- TODO FORM WILL GO HERE -->
         <div class="col-5 offset-1">
-            <form onsubmit="app.carsController.addCar(event)">
+            <form onsubmit="app.jobsController.addJob(event)">
                 <div class="form-group">
-                    <!-- <small id="helpId" class="text-muted">Help text</small> -->
                     <label for=""></label>
                     <input
                     type="text"
-                    name="make"
+                    name="company"
                     class="form-control"
-                    placeholder="Make"
+                    placeholder="Company"
                     aria-describedby="helpId"
                     />
                     <label for=""></label>
                     <input
                     type="text"
-                    name="model"
+                    name="jobTitle"
                     class="form-control"
-                    placeholder="Model"
+                    placeholder="Job title"
                     aria-describedby="helpId"
                     />
                     <label for=""></label>
@@ -63,42 +61,35 @@
                 <div class="col-5">
 
                     <label for=""></label>
-                    <input
+                    
+                <label for=""></label>
+                <input
                 type="text"
-                name="imgUrl"
+                name="hours"
                 class="form-control"
-                placeholder="Image Url"
+                placeholder="Hours per week"
                 aria-describedby="helpId"
                 />
                 <label for=""></label>
                 <input
                 type="text"
-                name="price"
+                name="rate"
                 class="form-control"
-                placeholder="Price"
-                aria-describedby="helpId"
-                />
-                <label for=""></label>
-                <input
-                type="text"
-                name="year"
-                class="form-control"
-                placeholder="Year"
+                placeholder="Rate"
                 aria-describedby="helpId"
                 />
             </div>
         <div class="col-12 m-auto text-center">
             <button class="btn-warning btn p-2 m-2 " type="submit">
-                Create The Car!
+                Create The Job!
             </button>
         </div>
         </form>
     </div>
-    
-      <div class="row" id="cars"> </div>
-      <div class="row" id="houses"> </div>
       <div class="row" id="jobs"> </div>
-     
+        <div class="row" id="cars"> </div>
+          <div class="row" id="houses"> </div>
+      
     </main>
 
     <script
